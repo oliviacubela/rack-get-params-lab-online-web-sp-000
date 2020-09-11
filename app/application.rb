@@ -27,6 +27,12 @@ class Application
       return "Couldn't find #{search_term}"
     end
   end
+
+  def empty_cart
+    if @@items.empty?
+      return "Your cart is empty"
+    end
+  end
 end
 
 # def empty_cart
