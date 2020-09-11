@@ -31,6 +31,8 @@ class Application
   def empty_cart
     if @@items.empty?
       return "Your cart is empty"
+    else 
+      return @@items
     end
   end
 end
