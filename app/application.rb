@@ -14,14 +14,15 @@ class Application
       search_term = req.params["q"]
       resp.write handle_search(search_term)
     end
-  elsif req.path.match(/cart/)
-    resp.write empty_cart
-  end
-    else
-      resp.write "Path Not Found"
+    elsif req.path.match(/cart/)
+      resp.write empty_cart
     end
-
-    resp.finish
+      else
+        resp.write "Path Not Found"
+      end
+      
+      resp.finish
+    end
   end
 
   def handle_search(search_term)
