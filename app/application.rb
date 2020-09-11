@@ -49,9 +49,4 @@ class Application
   end
 end
 
-# def empty_cart
-#   if @@items.empty?
-#     return "Your cart is empty"
-#   else
-#     @@items
-#   end
+
