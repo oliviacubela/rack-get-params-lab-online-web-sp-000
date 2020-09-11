@@ -23,7 +23,6 @@ class Application
 
     resp.finish
   end
-end
 
   def handle_search(search_term)
     if @@items.include?(search_term)
